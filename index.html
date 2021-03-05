@@ -1,0 +1,52 @@
+<!-- Scrivi un programma che stampi i numeri da 1 a 100,
+ma per i multipli di 3 stampi "Fizz" al posto del numero e per i multipli di 5 stampi Buzz.
+Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz. -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Stampa i tuoi dati</title>
+    <style>
+        * {
+          margin:0;
+          padding:0;
+        }
+        body {
+          background-color:lightblue;
+        }
+        .row {
+          text-align: center;
+        }
+        .row h1 {
+          margin: 10px auto;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <h1 id="mainTitle"></h1>
+    </div>
+    <script>
+    var arr=[];
+      for (var i = 0; i < 100; i++) {
+        arr[i]=i + 1;
+        var fizz= arr[i] / 3;
+        var buzz= arr[i] / 5;
+        var fizzbuzz= arr[i] / 15;
+        var fizzR= Math.round(fizz);
+        var buzzR= Math.round(buzz);
+        var fizzbuzzR= Math.round(fizzbuzz);
+        console.log(fizz,buzz,fizzbuzz,fizzR,buzzR,fizzbuzzR)
+
+        if (fizzbuzz==fizzbuzzR ) {
+          arr[i]= 'fizz buzz';
+        }else if (buzz ==buzzR) {
+          arr[i]= 'buzz';
+        } else if (fizz == fizzR) {
+          arr[i]= 'fizz';
+        }
+      }
+    console.log(arr)
+    </script>
+  </body>
+</html>
