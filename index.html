@@ -32,18 +32,16 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz. -->
         arr[i]=i + 1;
         var fizz= arr[i] / 3;
         var buzz= arr[i] / 5;
-        var fizzbuzz= arr[i] / 15;
         var fizzR= Math.round(fizz);
         var buzzR= Math.round(buzz);
-        var fizzbuzzR= Math.round(fizzbuzz);
-        console.log(fizz,buzz,fizzbuzz,fizzR,buzzR,fizzbuzzR)
+        console.log(fizz,buzz,fizzR,buzzR)
 
-        if (fizzbuzz==fizzbuzzR ) {
-          arr[i]= 'fizz buzz';
+        if ( fizz == fizzR && buzz ==buzzR ) {
+          arr[i]= 'Fizz Buzz';
         }else if (buzz ==buzzR) {
-          arr[i]= 'buzz';
+          arr[i]= 'Buzz';
         } else if (fizz == fizzR) {
-          arr[i]= 'fizz';
+          arr[i]= 'Fizz';
         }
       }
     console.log(arr)
