@@ -28,6 +28,7 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz. -->
     </div>
     <script>
     var arr=[];
+      // Prima mia soluzione
       for (var i = 0; i < 100; i++) {
         arr[i]=i + 1;
         var fizz= arr[i] / 3;
@@ -44,6 +45,19 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz. -->
           arr[i]= 'Fizz';
         }
       }
+      // Soluzione di Giovanni
+      for (var i=1;i<=100;i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                console.log('FizzBuzz (' + i + ')');
+            } else if (i % 3 == 0) {
+                console.log('Fizz (' + i + ')');
+            } else if (i % 5 == 0) {
+                console.log('Buzz (' + i + ')');
+            } else {
+                console.log(i);
+            }
+        }    
+      .
     console.log(arr)
     </script>
   </body>
